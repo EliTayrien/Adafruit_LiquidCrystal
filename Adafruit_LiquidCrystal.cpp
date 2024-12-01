@@ -397,7 +397,7 @@ void Adafruit_LiquidCrystal::_pinMode(uint8_t p, uint8_t d) {
 }
 
 // write either command or data, with automatic 4/8-bit selection
-void Adafruit_LiquidCrystal::send(uint8_t value, boolean mode) {
+void Adafruit_LiquidCrystal::send(uint8_t value, bool mode) {
   _digitalWrite(_rs_pin, mode);
 
   // if there is a RW pin indicated, set it low to Write
